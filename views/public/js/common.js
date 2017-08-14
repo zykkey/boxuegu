@@ -12,3 +12,9 @@
 	///views/dashboard/login
 		 window.location.href= '/login';
 	}
+
+
+	if (location.pathname!="/login"&&location.pathname!="/dashboard/login"&&location.pathname!="/views/dashboard/login"){
+	    var html =template("profile",JSON.parse($.cookie("tcInfo")));
+	    $("#pro").html(html);
+    }

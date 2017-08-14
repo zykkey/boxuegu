@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../views/public/assets/artTemplate/template.js"></script>
+</head>
+<body>
+<div id="box"></div>
+</body>
+<script type="template/html" id="tol">
+<div>他叫{{name}}来自{{adderess}}今年{{age}}</div>
+<div>电话号码是{{tel}}</div>
+</script>
+<script>
+    var get={
+        name:"小明",
+        age:15,
+        tel:12345678910,
+        address:"广州"
+    };
+    var html =template("tol",get);
+    document.querySelector("#box").innerHTML=html;
+</script>
+</html>
