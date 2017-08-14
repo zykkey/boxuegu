@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="js/require.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  // 如果需要返回值的话，则需要在当前的函数里面，设置参数来接收   模块和当前调用者回调函数中的形参是一一对应的
+  require(['js/a','js/b','js/c'],function (a,obj,str){
+      console.log(a);
+      console.log(obj);
+      console.log(str);
+  });
+</script>
